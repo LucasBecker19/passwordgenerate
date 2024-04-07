@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senha Aleatória</title>
+    <script src="./controller/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gerador de Senha Aleatória</h1>
+        </header>
+        <div class="input-group">
+            <p>Digite o tamanho da senha (10-20):</p>
+            <input type="number" id="passwordLength" placeholder="Digite o tamanho da senha (10-20)">
+        </div>
+        <div class="input-group">
+            <p>Digite um nome para a senha:</p>
+            <input type="text" id="passwordName" placeholder="Coloque um nome para a senha">
+        </div>
+        <button onclick="generateRandomPassword()">Gerar senha</button>
+        <p id="demo"></p>
+        <p id="length"></p>
+        <button onclick="copyToClipboard()">Copiar senha</button>
+        <button onclick="savePassword()">Salvar senha</button>
+        <!-- Corrija o caminho para showPasswords.html -->
+        <button onclick="window.location.href = 'view/showPasswords.html'">Ver senhas</button>
+    </div>
+</body>
+</html>

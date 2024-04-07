@@ -1,0 +1,50 @@
+/* Estilos para o body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container principal */
+.container {
+    width: 50%;
+    max-width: 400px; /* Define a largura máxima absoluta */
+    text-align: center;
+}
+
+/* Estilos para os grupos de inputs */
+.input-group {
+    margin-bottom: 15px; /* Espaçamento entre os grupos de inputs */
+}
+
+/* Estilos para os inputs */
+input[type="number"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos para os botões */
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    width: 150px; /* Defina a largura desejada para todos os botões */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
