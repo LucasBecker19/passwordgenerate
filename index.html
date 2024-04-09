@@ -3,30 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerador de Senha Aleatória</title>
+    <title>Gerador de Senha</title>
     <script src="./controller/script.js"></script>
     <link rel="stylesheet" type="text/css" href="./assets/style.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Gerador de Senha Aleatória</h1>
+            <h1>Gerador de Senha</h1>
         </header>
-        <div class="input-group">
-            <p>Digite o tamanho da senha (10-20):</p>
-            <input type="number" id="passwordLength" placeholder="Digite o tamanho da senha (10-20)">
+
+        <div class="form-group">
+            <div class="input-group">
+                <p>Nome para a senha:</p>
+                <input type="text" id="passwordName" placeholder="Ex: Conta bancária">
+            </div>
+            <div class="input-group">
+                <p>Tamanho da senha (10-20):</p>
+                <div class="gen-password-row">
+                    <input type="number" id="passwordLength" placeholder="Ex: 10">
+                    <button onclick="generateRandomPassword()">Gerar senha</button>
+                </div>
+            </div>
         </div>
-        <div class="input-group">
-            <p>Digite um nome para a senha:</p>
-            <input type="text" id="passwordName" placeholder="Coloque um nome para a senha">
+        <div class="results-group">
+            <p id="demo">...</p>
+            <p id="length"></p>
         </div>
-        <button onclick="generateRandomPassword()">Gerar senha</button>
-        <p id="demo"></p>
-        <p id="length"></p>
-        <button onclick="copyToClipboard()">Copiar senha</button>
-        <button onclick="savePassword()">Salvar senha</button>
-        <!-- Corrija o caminho para showPasswords.html -->
-        <button onclick="window.location.href = 'view/showPasswords.html'">Ver senhas</button>
+        <div class="buttons-group">        
+            <button onclick="copyToClipboard()">Copiar senha</button>
+            <button onclick="savePassword()">Salvar senha</button>
+            <!-- Corrija o caminho para showPasswords.html -->
+            <button onclick="window.location.href = 'view/showPasswords.html'">Ver senhas</button>
+        </div>
         <footer>&copy; Alexandre Trieste 2024 - Todos os direitos reservados</footer>
     </div>
 </body>
