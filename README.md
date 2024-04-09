@@ -44,6 +44,7 @@ Um simples gerenciador de senhas desenvolvido em JavaScript para armazenar e exi
 ## Contribuição
 
 Contribuições são bem-vindas! Se você encontrar algum problema ou tiver sugestões de melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request.
+1. [Lucas Becker]() - correções de frontend.
 
 ## Autor
 
@@ -51,4 +52,4 @@ Contribuições são bem-vindas! Se você encontrar algum problema ou tiver suge
 
 ## Licença
 
-Este projeto está licenciado sob a [GNU](https://opensource.org/licenses/MIT).
+Este projeto está licenciado sob a [Creative Commons₢₢]([https://opensource.org/licenses/MIT](https://github.com/alexandretrieste/passwordgenerate/blob/main/LICENSE)).
