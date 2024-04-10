@@ -44,7 +44,7 @@ Um simples gerenciador de senhas desenvolvido em JavaScript para armazenar e exi
 ## Contribuição
 
 Contribuições são bem-vindas! Se você encontrar algum problema ou tiver sugestões de melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request.
-1. [Lucas Becker]() - correções de frontend.
+1. [Lucas Becker](https://github.com/LucasBecker19) - Correções de frontend.
 
 ## Autor
 
