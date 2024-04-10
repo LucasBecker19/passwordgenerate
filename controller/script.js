@@ -22,7 +22,6 @@ function generateRandomPassword() {
         result += characters.charAt(Math.floor(Math.random() * charactersLength));
     }
     document.getElementById("demo").innerHTML = result;
-    document.getElementById("length").innerHTML = passwordLengthText;
     validateSavePasswordButton();
 }
 
@@ -86,7 +85,7 @@ function showPasswords() {
 function validateGeneratePasswordButton() {
     var length = document.getElementById("passwordLength").value;
     var passwordName = document.getElementById("passwordName").value;
-    var generateButton = document.getElementById("generatePasswordButton");
+    var generateButton = document.querySelector(".gen-password-row button");
     if (length >= 10 && length <= 20 && passwordName) {
         generateButton.disabled = false;
     } else {
@@ -139,6 +138,5 @@ function deletePassword() {
 
 // Chamar as funções de validação ao carregar a página
 window.onload = function() {
-    validateGeneratePasswordButton();
     validateSavePasswordButton();
 };

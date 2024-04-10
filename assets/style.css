@@ -1,3 +1,13 @@
+/* Utils */
+.d-none {
+    display: none;
+}
+
+/* header */
+header h1 {
+    font-size: 24px;
+}
+
 /* Estilos para o body */
 body {
     font-family: Arial, sans-serif;
@@ -17,26 +27,48 @@ body {
     text-align: center;
 }
 
-/* Estilos para os grupos de inputs */
-.input-group {
-    margin-bottom: 15px; /* Espaçamento entre os grupos de inputs */
+.container h1 {
+    margin-top: 0;
+}
+
+/* Estilos para os grupos do formulário */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group p {
+    font-size: 14px;
+    text-align: start;
+    margin-bottom: 4px;
+}
+
+.gen-password-row {
+    display: flex;
 }
 
 /* Estilos para os inputs */
 input[type="number"],
 input[type="text"] {
-    width: 100%;
     padding: 10px;
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
+input[type="number"] {
+    width: 40%;
+
+}
+
+input[type="text"] {
+    width: 100%;
+
+}
+
 /* Estilos para os botões */
 button {
     padding: 10px 20px;
     margin: 5px;
-    width: 150px; /* Defina a largura desejada para todos os botões */
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -46,6 +78,24 @@ button {
 
 button:hover {
     background-color: #45a049;
+}
+
+.buttons-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.gen-password-row button {
+    width: 60%;
+}
+
+.results-group #demo {
+    padding: 8px;
+    background-color: #cecece;
+    height: 20px;
+    border-radius: 12px;
+    border: 1px solid gray;
+    font-weight: 600;
 }
 
 footer {
