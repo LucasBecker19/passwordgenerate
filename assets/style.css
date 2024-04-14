@@ -1,14 +1,11 @@
-/* Utils */
 .d-none {
     display: none;
 }
 
-/* header */
 header h1 {
     font-size: 24px;
 }
 
-/* Estilos para o body */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -20,10 +17,9 @@ body {
     height: 100vh;
 }
 
-/* Container principal */
 .container {
     width: 50%;
-    max-width: 400px; /* Define a largura máxima absoluta */
+    max-width: 400px;
     text-align: center;
 }
 
@@ -31,7 +27,6 @@ body {
     margin-top: 0;
 }
 
-/* Estilos para os grupos do formulário */
 .form-group {
     margin-bottom: 15px;
 }
@@ -46,7 +41,6 @@ body {
     display: flex;
 }
 
-/* Estilos para os inputs */
 input[type="number"],
 input[type="text"] {
     padding: 10px;
@@ -65,7 +59,6 @@ input[type="text"] {
 
 }
 
-/* Estilos para os botões */
 button {
     padding: 10px 20px;
     margin: 5px;

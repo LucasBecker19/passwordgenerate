@@ -1,10 +1,8 @@
-// Funções para gerar, copiar, salvar e visualizar senhas.
 function generateRandomPassword() {
     var length = document.getElementById("passwordLength").value;
     var passwordName = document.getElementById("passwordName").value;
     var passwordLengthText = "(" + length + " caracteres)";
-    
-    // Verificar se o nome da senha foi fornecido
+  
     if (!passwordName) {
         alert("Por favor, forneça um nome para a senha.");
         return;
@@ -27,8 +25,7 @@ function generateRandomPassword() {
 
 function copyToClipboard() {
     var password = document.getElementById("demo").innerHTML;
-    
-    // Verificar se uma senha foi gerada
+
     if (!password) {
         alert("Por favor, gere uma senha antes de copiá-la para a área de transferência.");
         return;
@@ -50,25 +47,25 @@ function savePassword() {
         alert("Por favor, gere uma senha antes de tentar salvá-la.");
         return;
     }
-    // Verificar se o nome da senha foi fornecido
+
     if (!passwordName) {
         alert("Por favor, forneça um nome para a senha.");
         return;
     }
-    // Verificar se a senha já existe
+
     if (localStorage.getItem(passwordName)) {
         alert("Não é possível salvar a mesma senha duas vezes.");
         return;
     }
-    // Gerar index sequencial único
+ 
     var index = localStorage.length + 1;
-    // Salvar senha no localStorage
+ 
     localStorage.setItem(passwordName, JSON.stringify({
         password: password,
         index: index
     }));
     alert("Senha salva com sucesso!");
-    // Desativar o botão Salvar senha
+
     validateSavePasswordButton();
 }
 
@@ -81,7 +78,6 @@ function showPasswords() {
     window.open("showPasswords.html?passwords=" + encodeURIComponent(JSON.stringify(passwords)), "_blank");
 }
 
-// Funções para validação e tratamento de erros.
 function validateGeneratePasswordButton() {
     var length = document.getElementById("passwordLength").value;
     var passwordName = document.getElementById("passwordName").value;
@@ -109,7 +105,6 @@ function deletePassword() {
         return;
     }
 
-    // Buscar a senha correspondente ao índice
     var passwordToDelete = null;
     for (var i = 0; i < localStorage.length; i++) {
         var key = localStorage.key(i);
@@ -130,13 +125,11 @@ function deletePassword() {
         return;
     }
 
-    // Remover a senha com base no nome
     localStorage.removeItem(passwordToDelete);
     alert("Senha com o index " + index + " e nome \"" + passwordToDelete + "\" excluída com sucesso!");
     location.reload();
 }
 
-// Chamar as funções de validação ao carregar a página
 window.onload = function() {
     validateSavePasswordButton();
 };
